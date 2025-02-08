@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nyarkoah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Supherhero">
+    <meta name="keywords" content="programming hero,learn programming">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <h3></h3>
+
+    
+
+</div>
+
+
+
+
+
+<!--main js-->
+<script src="js/main.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Special Friend, Nyarkoah</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff99cc, #ff66b2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .message {
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .thank-you {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .hearts-container {
+            margin-top: 30px;
+        }
+
+        .heart {
+            font-size: 24px;
+            display: inline-block;
+            animation: floatHearts 1.5s infinite alternate ease-in-out;
+            margin: 5px;
+        }
+
+        @keyframes floatHearts {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>For My Special Friend, Nyarkoah</h1>
+        <p class="message">You are a true friend, a blessing, and a wonderful person. Even with all my disturbances, you still remain kind, patient, and caring. I appreciate every moment with you and I’m grateful to have you in my life. You are special! ❤️</p>
+        
+        <div class="thank-you">
+            <h2>Thank You, Nyarkoah</h2>
+            <p>For your kindness, patience, and friendship.</p>
+            <p>For always understanding me, even when I annoy you.</p>
+            <p>For being a true and special friend.</p>
+        </div>
+        
+        <div class="hearts-container">
+            <span class="heart">❤️</span>
+            <span class="heart">💖</span>
+            <span class="heart">💕</span>
+            <span class="heart">💗</span>
+            <span class="heart">💞</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let hearts = document.querySelectorAll(".heart");
+            hearts.forEach((heart, index) => {
+                heart.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+</html>
